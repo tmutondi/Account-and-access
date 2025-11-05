@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Account Management & Access Control - TechFlow</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #0d47a1;
+      color: white;
+      padding: 10px;
+      text-align: left;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .diagram {
+      background-color: #e3f2fd;
+      border: 2px dashed #0d47a1;
+      border-radius: 12px;
+      text-align: center;
+      padding: 40px;
+      margin-top: 20px;
+    }
+
+    .diagram img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #0d47a1;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📘 Case Study: User Account Management & Access Control</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>🏢 Background</h2>
+      <p>
+        With TechFlow’s CRM nearing launch, new employees and early adopters require accounts. However, support has no standardised user access request process. Accounts are created inconsistently, leading to security risks (duplicate accounts, improper access levels).
+      </p>
+      <p>
+        You’ve been asked to build a secure user account management framework that ensures proper onboarding, role-based permissions, and controlled access to the system.
+      </p>
+    </section>
+
+    <section>
+      <h2>🖥️ Task</h2>
+      <ul>
+        <li>Design an onboarding/offboarding workflow.</li>
+        <li>Create role-based access rules.</li>
+        <li>Draft mock tickets for access requests.</li>
+        <li>Build a permissions matrix.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🧾 Deliverables</h2>
+      <ol>
+        <li>User Access Request Form</li>
+        <li>Permissions Matrix</li>
+        <li>Sample Access Tickets (20 examples)</li>
+        <li>Onboarding/Offboarding Workflow</li>
+        <li>Training Guide</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>📄 1. User Access Request Form</h2>
+      <table>
+        <tr><th>Field</th><th>Description</th></tr>
+        <tr><td>Full Name</td><td>User’s full name</td></tr>
+        <tr><td>Department</td><td>Team or department</td></tr>
+        <tr><td>Email Address</td><td>Work email</td></tr>
+        <tr><td>Requested Role</td><td>Admin / Manager / Support / End-user</td></tr>
+        <tr><td>Start Date</td><td>Onboarding date</td></tr>
+        <tr><td>Approval Signature</td><td>Supervisor/Manager approval</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>🔐 2. Permissions Matrix</h2>
+      <table>
+        <tr>
+          <th>Role</th>
+          <th>Access Level</th>
+          <th>Capabilities</th>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>Full</td>
+          <td>Manage users, configure system, access all data</td>
+        </tr>
+        <tr>
+          <td>Manager</td>
+          <td>High</td>
+          <td>Approve requests, view reports, manage teams</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>Moderate</td>
+          <td>Assist users, reset passwords, limited data access</td>
+        </tr>
+        <tr>
+          <td>End-user</td>
+          <td>Basic</td>
+          <td>Use assigned features, update own profile</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>🎟️ 3. Sample Access Tickets</h2>
+      <p>Examples include:</p>
+      <ul>
+        <li>New user account requests</li>
+        <li>Role change requests</li>
+        <li>Account termination requests</li>
+      </ul>
+      <p>Sample Ticket Example:</p>
+      <table>
+        <tr><th>Ticket ID</th><th>Request Type</th><th>User</th><th>Status</th></tr>
+        <tr><td>#001</td><td>New Account</td><td>John Mokoena</td><td>Approved</td></tr>
+        <tr><td>#002</td><td>Role Change</td><td>Lebo Dlamini</td><td>Pending</td></tr>
+        <tr><td>#003</td><td>Account Termination</td><td>Sipho Ndlovu</td><td>Completed</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>🧭 4. Onboarding / Offboarding Workflow (Diagram)</h2>
+      <div class="diagram">
+       <img src="onboarding_offboarding.png" alt="Onboarding and Offboarding Workflow" />
+        <!-- Replace placeholder with: 
+        <img src="onboarding_offboarding.png" alt="Onboarding and Offboarding Workflow" /> -->
+      </div>
+    </section>
+
+    <section>
+      <h2>📘 5. Training Guide (Summary)</h2>
+      <p><strong>Account Creation Steps:</strong></p>
+      <ol>
+        <li>Receive and verify the access request form.</li>
+        <li>Confirm managerial approval and role alignment.</li>
+        <li>Create user account in CRM system.</li>
+        <li>Assign appropriate role-based permissions.</li>
+        <li>Send credentials securely to the new user.</li>
+      </ol>
+      <p><strong>Account Termination Steps:</strong></p>
+      <ol>
+        <li>Receive termination notification or HR exit form.</li>
+        <li>Revoke system access and change passwords immediately.</li>
+        <li>Archive user data for audit compliance.</li>
+        <li>Deactivate account within 24 hours of departure.</li>
+        <li>Update access logs and report completion.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    TechFlow Solutions © 2025 | User Account Management Framework
+  </footer>
+</body>
+</html>
